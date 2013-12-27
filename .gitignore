@@ -9,11 +9,10 @@ application/logs/*
 !application/logs/.htaccess
 
 
-*/.idea/*
-.idea/*
 .idea/workspace.xml
 *.idea/workspace.xml
 .idea/workspace.xml
+.idea/*
 
 *application/logs/*
 application/logs/
