@@ -7,3 +7,17 @@ application/cache/*
 application/logs/*
 !application/logs/index.html
 !application/logs/.htaccess
+
+
+*/.idea/*
+.idea/*
+.idea/workspace.xml
+*.idea/workspace.xml
+
+*application/logs/*
+application/logs/
+.idea/vcs.xml
+*.idea/vcs.xml
+
+*images/*
+.images/*
