@@ -13,6 +13,7 @@ application/logs/*
 .idea/*
 .idea/workspace.xml
 *.idea/workspace.xml
+.idea/workspace.xml
 
 *application/logs/*
 application/logs/
