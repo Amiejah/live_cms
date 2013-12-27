@@ -1,0 +1,113 @@
+@import url('http://fonts.googleapis.com/css?family=Oswald:300,400,700');
+html,
+body {
+  background-image: url('../images/bg.jpg');
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  background-size: cover;
+}
+#wrapper {
+  background-color: #ffffff;
+  -webkit-box-shadow: inset 0 1px 1px #808080, 0 0 6px #ededed;
+  box-shadow: inset 0 1px 1px #808080, 0 0 6px #ededed;
+}
+.logo {
+  /*display: inline-block;*/
+  margin: 0 0 1.9em 0;
+}
+.navbar-collapse {
+  padding-left: 0px;
+}
+.navbar-nav li:first-child i.fa {
+  font-size: 31px;
+  line-height: 20px;
+}
+.navbar-nav li:first-child span {
+  display: inline-block;
+  text-indent: -9999px;
+}
+.navbar-nav a {
+  font-family: "Oswald", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+.social-icons {
+  margin: 0 0 2.4em 0;
+  padding: 0;
+}
+.social-icons li {
+  list-style: none;
+  display: inline-block;
+  height: 27px;
+  margin: 0;
+  padding: 0;
+  width: 28px;
+}
+.social-icons li a {
+  background-color: #c8c8c8;
+  color: white;
+  font-size: 18px;
+  display: block;
+  height: 100%;
+  width: 100%;
+  outline: none;
+  text-align: center;
+  text-decoration: none;
+}
+.social-icons li a i {
+  margin-top: 6px;
+}
+.social-icons li a:hover {
+  background-color: #c62f2e;
+}
+.sidebar ul {
+  margin: 0;
+  padding: 0;
+}
+.sidebar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 0 10px 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 14px;
+}
+.sidebar h3 {
+  font-size: 18px;
+  margin: 0px;
+  padding: 0px;
+}
+.sidebar h2 {
+  border-bottom-style: solid;
+  border-bottom-width: 3px;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  padding-bottom: 7px;
+  text-transform: uppercase;
+}
+.sidebar .widget span.pull-left {
+  display: inline-block;
+  width: 20%;
+}
+.sidebar .media-body em {
+  display: block;
+  font-size: 10px;
+}
+footer.footer {
+  background-color: #252525;
+  border-top-width: 4px;
+  border-top-style: solid;
+  color: #acacac;
+  padding-top: 20px;
+}
+footer.second-footer {
+  background-color: #111111;
+  color: #acacac;
+  text-align: center;
+}
+footer.footer,
+.sidebar h2 {
+  border-color: #cb383d;
+}
