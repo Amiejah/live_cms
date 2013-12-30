@@ -10,7 +10,6 @@ class Casino extends Admin_Controller {
 
 
     public function index(){
-
         $this->data['widgets'] = $this->top_widget->get();
         $this->data['subview'] = 'admin/casino/index';
         $this->load->view( 'admin/_layout_main', $this->data );
@@ -83,5 +82,15 @@ class Casino extends Admin_Controller {
     public function delete( $widget_id ){
         $this->top_widget->delete( $widget_id );
         redirect( 'admin/casino' );
+    }
+
+    // Use this function for (ajax) calling/getting the data
+    public function retrieve_data(){
+        $this->output->set_content_type('application/json');
+        $this->data['json'] = $this->top_widget->get();
+
+        if(!$this->data['json']) show_404();
+
+        $this->load->view('admin/casino/json_view', $this->data);
     }
 }
