@@ -124,6 +124,59 @@ body {
   display: block;
   font-size: 10px;
 }
+table.top_widget thead {
+  background-image: -webkit-gradient(linear, left 0%, left 100%, from(#f8e2bf), to(#f6cd90));
+  background-image: -webkit-linear-gradient(top, #f8e2bf 0%, #f6cd90 100%);
+  background-image: -moz-linear-gradient(top, #f8e2bf 0%, #f6cd90 100%);
+  background-image: linear-gradient(to bottom, #f8e2bf 0%, #f6cd90 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff8e2bf', endColorstr='#fff6cd90', GradientType=0);
+}
+table.top_widget thead tr {
+  border-color: #c67b09;
+  border-style: solid;
+  border-width: 1px;
+}
+table.top_widget thead th {
+  border-color: #c67b09;
+  border-style: solid;
+  border-bottom-width: 1px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  color: #633c16;
+  text-transform: uppercase;
+}
+table.top_widget tbody tr {
+  border-color: #c8c8c8;
+  border-left-width: 1px;
+  border-right-width: 1px;
+  border-bottom-width: 0px;
+  border-top-width: 0px;
+  border-style: solid;
+}
+table.top_widget tbody tr td {
+  vertical-align: middle;
+}
+table.top_widget tbody tr td img {
+  display: inline-block;
+  float: left;
+  width: 25%;
+}
+table.top_widget tbody tr td.widget_title,
+table.top_widget tbody tr td.widget_ratings,
+table.top_widget tbody tr td.widget_bonus,
+table.top_widget tbody tr td.widget_download {
+  border-color: #f9f2e6;
+  border-style: solid;
+  border-left-width: 1px;
+  border-right-width: 1px;
+  border-top-width: 1px;
+  border-bottom-width: 0px;
+}
+table.top_widget .widget_count {
+  text-align: center;
+}
 footer.footer {
   background-color: #252525;
   border-top-width: 4px;
