@@ -146,6 +146,8 @@ table.top_widget thead th {
   border-top-width: 0px;
   color: #633c16;
   text-transform: uppercase;
+  vertical-align: middle;
+  font-size: 13px;
 }
 table.top_widget tbody tr {
   border-color: #c8c8c8;
@@ -155,13 +157,22 @@ table.top_widget tbody tr {
   border-top-width: 0px;
   border-style: solid;
 }
+table.top_widget tbody tr:last-child td {
+  border-bottom: 1px solid #c8c8c8 !important;
+}
 table.top_widget tbody tr td {
+  font-size: 12px;
+  padding: 3px 5px;
+  font-weight: bold;
   vertical-align: middle;
 }
 table.top_widget tbody tr td img {
+  margin: 0 1.3em 0 0;
   display: inline-block;
-  float: left;
   width: 25%;
+}
+table.top_widget tbody tr td.widget_count {
+  border-bottom: 1px solid #f9f2e6;
 }
 table.top_widget tbody tr td.widget_title,
 table.top_widget tbody tr td.widget_ratings,
@@ -173,6 +184,9 @@ table.top_widget tbody tr td.widget_download {
   border-right-width: 1px;
   border-top-width: 1px;
   border-bottom-width: 0px;
+}
+table.top_widget tbody tr td.widget_download {
+  border-right: 0px;
 }
 table.top_widget .widget_count {
   text-align: center;

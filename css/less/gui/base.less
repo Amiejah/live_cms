@@ -149,10 +149,17 @@ table.top_widget {
       border-top-width: 0px;
       color: #633c16;
       text-transform: uppercase;
+      vertical-align: middle;
+      font-size: 13px;
     }
   }
   tbody {
     tr {
+      &:last-child {
+        td {
+          border-bottom: 1px solid #c8c8c8 !important;
+        }
+      }
       border-color: #c8c8c8;
       border-left-width: 1px;
       border-right-width: 1px;
@@ -160,12 +167,18 @@ table.top_widget {
       border-top-width: 0px;
       border-style: solid;
       td {
+        font-size: 12px;
+        padding: 3px 5px;
+        font-weight: bold;
         vertical-align: middle;
         img {
+          margin: 0 1.3em 0 0;
           display: inline-block;
-          float: left;
           width: 25%;
         }
+      }
+      td.widget_count{
+        border-bottom:1px solid #f9f2e6;
       }
       td.widget_title,
       td.widget_ratings,
@@ -177,6 +190,9 @@ table.top_widget {
         border-right-width: 1px;
         border-top-width: 1px;
         border-bottom-width: 0px;
+      }
+      td.widget_download {
+        border-right: 0px;
       }
     }
   }
