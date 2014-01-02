@@ -37,6 +37,9 @@ class Casino extends Admin_Controller {
                 'widget_description',
                 'widget_status',
                 'widget_order',
+                'widget_ratings',
+                'widget_bonus',
+                'widget_external_url',
                 'use_custom_meta',
                 'widget_slug'
             ));

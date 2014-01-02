@@ -62,6 +62,9 @@
             $widget->widget_data_upload = '';  // Data/Download
             $widget->widget_status = 0;
             $widget->widget_order = 0;
+            $widget->widget_ratings = '1';
+            $widget->widget_bonus = '';
+            $widget->widget_external_url = '';
             $widget->widget_slug = '';
             $widget->use_custom_meta = true;
             return $widget;

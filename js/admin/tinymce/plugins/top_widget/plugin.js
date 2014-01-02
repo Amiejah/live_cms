@@ -9,33 +9,6 @@
 
 
 tinymce.PluginManager.add('top_widget', function(editor) {
-
-    function getHTTPObject()
-    {
-        var xhr = false;
-        if (window.XMLHttpRequest)
-        {
-            xhr = new XMLHttpRequest();
-        } else if (window.ActiveXObject) {
-            try
-            {
-                xhr = new ActiveXObject("Msxml2.XMLHTTP");
-            }
-            catch(e)
-            {
-                try
-                {
-                    xhr = new ActiveXObject("Microsoft.XMLHTTP");
-                }
-                catch(e)
-                {
-                    xhr = false;
-                }
-            }
-        }
-        return xhr;
-    }
-
     // Retrieve the data
     // Create a table based on the data
     function createHTMLtable(){
@@ -72,9 +45,12 @@ tinymce.PluginManager.add('top_widget', function(editor) {
                         tbl += '</span>';
                         tbl += data[i]['widget_title'];
                         tbl += '</td>';
-                        tbl += '<td class="widget_ratings hidden-xs">ratings</td>';
-                        tbl += '<td class="widget_bonus">bonus</td>';
-                        tbl += '<td class="widget_download hidden-xs">casino' + data[i]['widget_id'] + '/' + data[i]['widget_slug'] + '</td>';
+                        tbl += '<td class="widget_ratings hidden-xs">' +  data[i]['widget_ratings'] + '</td>';
+                        tbl += '<td class="widget_bonus">' + data[i]['widget_bonus'] + '</td>';
+                        tbl += '<td class="widget_download hidden-xs">';
+                            tbl += '<a href="' + data[i]['widget_external_url'] + '">download</a>';
+                            tbl += '<a href="casino/' + data[i]['widget_id'] + '/' + data[i]['widget_slug'] + '">Review</a>';
+                        tbl += '</td>';
 
                         tbl += '</tr>';
                     }

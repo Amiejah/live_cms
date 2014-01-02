@@ -43,6 +43,24 @@
             <td><?php echo form_dropdown('widget_status', array(1 => 'Active', 2 => 'Inactive'), $this->input->post( 'widget_status' ) ? $this->input->post( 'widget_status') : $widget->widget_status, 'class="form-control"');?></td>
         </tr>
         <tr>
+            <td width="25%">Ratings</td>
+            <td>
+                <?php echo form_dropdown('widget_ratings', array( 1 => '1', 2 => '2', 3 => '3', 4 => '4', 5 => '5'), $this->input->post('widget_ratings') ? $this->input->post('widget_ratings') : $widget->widget_ratings, 'class="form-control"');?>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%">Welkomstbonus</td>
+            <td>
+                <?php echo form_input('widget_bonus', set_value('widget_bonus', $widget->widget_bonus), 'class="form-control"');?>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%">External URL</td>
+            <td>
+                <?php echo form_input('widget_external_url', set_value('widget_external_url', $widget->widget_external_url), 'class="form-control"');?>
+            </td>
+        </tr>
+        <tr>
             <td width="25%">Order</td>
             <td><?php echo form_input('widget_order',set_value('widget_order', $widget->widget_order), 'class="form-control"');?></td>
         </tr>
