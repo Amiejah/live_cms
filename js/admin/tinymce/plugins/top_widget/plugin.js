@@ -37,7 +37,6 @@ tinymce.PluginManager.add('top_widget', function(editor) {
                 $.each(data, function() {
                     if( data[i]['widget_status'] == 1) {
                         tbl += '<tr>';
-
                         tbl += '<td class="widget_count hidden-xs">' + c + '</td>';
                         tbl += '<td class="widget_title">';
                         tbl += '<span>';
@@ -48,22 +47,20 @@ tinymce.PluginManager.add('top_widget', function(editor) {
                         tbl += '<td class="widget_ratings hidden-xs">' +  data[i]['widget_ratings'] + '</td>';
                         tbl += '<td class="widget_bonus">' + data[i]['widget_bonus'] + '</td>';
                         tbl += '<td class="widget_download hidden-xs">';
-                            tbl += '<a href="' + data[i]['widget_external_url'] + '">download</a>';
-                            tbl += '<a href="casino/' + data[i]['widget_id'] + '/' + data[i]['widget_slug'] + '">Review</a>';
+                        tbl += '<a href="' + data[i]['widget_external_url'] + '" target="_blank">';
+                        tbl += '<i class="fa fa-download">&nbsp;</i>';
+                        tbl += '</a>';
+                        tbl += '<a href="casino/' + data[i]['widget_id'] + '/' + data[i]['widget_slug'] + '">Review</a>';
                         tbl += '</td>';
 
                         tbl += '</tr>';
                     }
-
                     i++;
                     c++;
                 });
                 tbl += '</tbody>';
 
                 tbl += '</table>';
-            },
-            error:function (xhr, ajaxOptions, thrownError){
-
             }
 
         });
