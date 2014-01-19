@@ -18,11 +18,11 @@
                 'forgot_pass/doforget'
             );
 
-//            if( in_array( uri_string(),  $exception_uris ) == FALSE ){
-//                if( $this->user_m->loggedin() == FALSE ){
-//                    redirect( 'admin/user/login' );
-//                }
-//            }
+            if( in_array( uri_string(),  $exception_uris ) == FALSE ){
+                if( $this->user_m->loggedin() == FALSE ){
+                    redirect( 'admin/user/login' );
+                }
+            }
 
         }
 

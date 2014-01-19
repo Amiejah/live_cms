@@ -6,6 +6,9 @@
     <meta name="keywords" content="<?php echo $output_metadata->meta_keywords;?>"/>
     <meta name="description" content="<?php echo $output_metadata->meta_description;?>"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="robots" content="noindex" />
+    <meta name="robots" content="nofollow" />
+
     <!-- Bootstrap -->
     <link href="<?php echo site_url('css/font-awesome.css'); ?>" rel="stylesheet"/>
     <link href="<?php echo site_url('css/bootstrap.css'); ?>" rel="stylesheet"/>
